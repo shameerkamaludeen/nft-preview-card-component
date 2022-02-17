@@ -1,0 +1,174 @@
+/* || General style rules */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.vertically-center {
+    display: flex;
+    align-items: center;
+}
+
+/* This as the class implies hide the lement visually */
+.hide-visually {
+    font-size: 0;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    overflow: hidden;
+    position: absolute!important;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    clip: rect(1px,1px,1px,1px);
+}
+
+/* Typography */
+
+body {
+    letter-spacing: 0.2px;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 10px;
+    line-height: 1.3;
+    font-family: 'Outfit', sans-serif;
+    word-spacing: 0.8px;
+}
+
+h2 {
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+p, span {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+}
+
+.ethereum span {
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+/* Layout */
+
+html, 
+body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    flex: 0;
+}
+
+/* || Section NFT Card */
+
+/* this helps vertically center the card component */
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nft-card {
+    width: 33em;
+    height: 54.5em;
+    padding: 2.5em;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+.nft-img-wrapper {
+    position: relative;
+}
+
+.nft-img-wrapper img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.nft-img-wrapper div:hover, 
+h2:hover {
+    cursor: pointer;
+}
+
+/* to display eye icon on hover */
+.nft-img-wrapper div:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/icon-view.svg) center no-repeat, hsla(178, 100%, 50%, 0.4);
+    border-radius: 8px;
+}
+
+.tag-wrapper {
+    justify-content: space-between;
+}
+
+.tag-wrapper img {
+    margin-right: 0.5em;
+}
+
+/* added to change the color of the hr element */
+hr { 
+    display: block; 
+    border: 0; 
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin: 1.6em 0; padding: 0; 
+}
+
+.card-footer img {
+    width: 3.5em;
+    height: 3.5em;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+    margin-right: 1.5em;
+}
+
+
+.card-footer a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    color: hsl(178, 100%, 50%);
+} 
+
+h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
+/* || Footer */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
