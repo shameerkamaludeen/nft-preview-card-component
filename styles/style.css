@@ -109,7 +109,7 @@ h2:hover {
 }
 
 /* to display eye icon on hover */
-.nft-img-wrapper div:hover::after {
+.nft-img-wrapper div::after {
     content: '';
     display: block;
     position: absolute;
@@ -119,6 +119,12 @@ h2:hover {
     bottom: 0;
     background: url(../images/icon-view.svg) center no-repeat, hsla(178, 100%, 50%, 0.4);
     border-radius: 8px;
+    opacity: 0;
+}
+
+.nft-img-wrapper div:hover::after {
+    opacity: 1;
+    transition: opacity 0.5s;
 }
 
 .tag-wrapper {
