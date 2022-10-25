@@ -73,7 +73,6 @@ Planning to learn more things that may ease or fuel development and its speed.
 
 - Github - [Shameer Kamaludeen](https://github.com/shameerkamaludeen)
 - Frontend Mentor - [@shameerkamaludeen](https://www.frontendmentor.io/profile/shameerkamaludeen)
-- Twitter - [@ShameerKamalud1](https://twitter.com/ShameerKamalud1)
 
 ## Acknowledgments
 Frontend Mentor does a great job providing this opportunity to involve in a development community this large and convenient, this helps me more involved in their platform because there is a lot more to do.
